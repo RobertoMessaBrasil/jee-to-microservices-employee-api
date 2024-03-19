@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import robertomessabrasil.jeetoms.employee.Employee;
+import robertomessabrasil.jeetoms.employee.api.model.Employee;
 import robertomessabrasil.jeetoms.employee.api.model.EmployeeDao;
 
 import java.util.List;
@@ -15,10 +15,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/employee/v1")
 public class EmployeeController {
-
     @Autowired
     private EmployeeDao employeeDao;
-
     @CrossOrigin
     @GetMapping("/employees")
     ResponseEntity<List<Employee>> listEmployees() {

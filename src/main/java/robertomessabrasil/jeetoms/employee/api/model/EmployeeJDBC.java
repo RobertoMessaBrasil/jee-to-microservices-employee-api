@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
-import robertomessabrasil.jeetoms.employee.Employee;
 
 import java.sql.*;
 import java.util.ArrayList;

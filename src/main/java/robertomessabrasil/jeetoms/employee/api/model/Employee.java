@@ -1,4 +1,4 @@
-package robertomessabrasil.jeetoms.employee;
+package robertomessabrasil.jeetoms.employee.api.model;
 
 public class Employee {
    
